@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Survival Game 
+# Symulacja Survival 
 
 
 <h3>STRUKTURA PLIKU <h3/>
@@ -27,5 +26,5 @@ w naszyej symulacji. <br/>
 <h2>Schronienie posiada dwa stany </h2>
 `SCHORNIENIE` i `POSZUKIWANIE`
 =======
-# Symulacja Survival 
->>>>>>> 11987f4fdd1657d7180ffa6f52587419930aa11d
+
+
