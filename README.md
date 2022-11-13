@@ -1,10 +1,10 @@
 # Programowanie-RiR-Projekt1
 Zbiór zadań/projektów składających się na zaliczeniową prace 1:
-1. [Symulacja przetrwania]('Survival)
-2. [Monte Carlo]('MonteCarlo')
-3. [JuliaSet]('JuliaSet')
-4. [Negatyw]('Negatwy')
-5. [Filozofowie]('filozofowie')
+1. [Symulacja przetrwania](Survival)
+2. [Monte Carlo](MonteCarlo)
+3. [JuliaSet](JuliaSet)
+4. [Negatyw](Negatwy)
+5. [Filozofowie](filozofowie)
 6. [Chat-Http](Chat)
 
 # Strutkura plików
