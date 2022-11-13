@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Survival Game 
 
 
@@ -25,3 +26,6 @@ w naszyej symulacji. <br/>
 
 <h2>Schronienie posiada dwa stany </h2>
 `SCHORNIENIE` i `POSZUKIWANIE`
+=======
+# Symulacja Survival 
+>>>>>>> 11987f4fdd1657d7180ffa6f52587419930aa11d
