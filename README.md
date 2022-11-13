@@ -1,7 +1,11 @@
 # Programowanie-RiR-Projekt1
-1 - System symulacji przetrwania <br />
-2 - Monte Carlo <br />
-3 - Negatyw z wątkami <br />
-4 - Julia Set <br />
-5 - Filozofowie <br />
-6 - Chat- serwer www <br />
+Zbiór zadań/projektów składających się na zaliczeniową prace 1:
+1. [Symulacja przetrwania]('Survival)
+2. [Monte Carlo]('MonteCarlo')
+3. [JuliaSet]('JuliaSet')
+4. [Negatyw]('Negatwy')
+5. [Filozofowie]('filozofowie')
+6. [Chat-Http]('Chat')
+
+# Strutkura plików
+Główne pliki znajdują sie w folderu [`src`](src), generowane obrazu są wrzucane w główny folder plików, obrazy do odczytu muszą zostać umieszczone także w głównych plikach folderu
