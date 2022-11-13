@@ -25,6 +25,6 @@ w naszyej symulacji. <br/>
 
 <h2>Schronienie posiada dwa stany </h2>
 `SCHORNIENIE` i `POSZUKIWANIE`
-=======
+
 
 
