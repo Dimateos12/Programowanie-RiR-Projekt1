@@ -6,7 +6,7 @@ public class ObszarKola extends Thread{
     private final double squareSide;
     private final Punkt_2D squareCenter;
     private final double circleRadius;
-    private final    double squareArea;
+    private final double squareArea;
 
     public ObszarKola(int t, double squareSide, Punkt_2D squareCenter, double circRadius, double squareArea) {
         this.squareSide = squareSide;

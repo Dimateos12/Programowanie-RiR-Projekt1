@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
 
         //ilosc watkow
-        final int NUMBER_OF_TRIALS = 4;
+        final int NUMBER_OF_THREADS = 4;
 
         //Ilośc prób
         final int NUMBER_OF_TRIALS = 100000;
@@ -23,12 +23,12 @@ public class Main {
         final double PRECISE_CIRCLE_AREA = Math.PI * Math.pow(CIRCLE_OF_RADIUS, 2);
 
         //Ilość prób na wątek
-        final int TRIALS_IN_THREAD = NUMBER_OF_TRIALS / NUMBER_OF_TRIALS;
+        final int TRIALS_IN_THREAD = NUMBER_OF_TRIALS / NUMBER_OF_THREADS;
 
         // Kolekcja wątków algorytmu
         ArrayList<ObszarKola> monteCarloThreads = new ArrayList<>();
 
-        for (int i = 0; i < NUMBER_OF_TRIALS; i++) {
+        for (int i = 0; i < NUMBER_OF_THREADS; i++) {
             ObszarKola t = new ObszarKola(TRIALS_IN_THREAD, squareSide, squareCenter, CIRCLE_OF_RADIUS, squareArea);
             monteCarloThreads.add(t);
             monteCarloThreads.get(i).start();
@@ -37,12 +37,12 @@ public class Main {
 
         double sumOfAreas = 0;
 
-        for (ObszarKola monteCardloResult: monteCarloThreads
-        ) {
+        for (ObszarKola monteCardloResult : monteCarloThreads)
+        {
             sumOfAreas += monteCardloResult.getResult();
         }
 
-        double predictedCircleArea = (double)sumOfAreas / (double)THREADS;
+        double predictedCircleArea = (double) sumOfAreas / (double) NUMBER_OF_THREADS;
 
         System.out.println("Dokładne pole koła: " + PRECISE_CIRCLE_AREA);
         System.out.println("Pole koła obliczone za pomocą symulacji: " + predictedCircleArea);
