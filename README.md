@@ -5,7 +5,7 @@ Zbiór zadań/projektów składających się na zaliczeniową prace 1:
 3. [JuliaSet]('JuliaSet')
 4. [Negatyw]('Negatwy')
 5. [Filozofowie]('filozofowie')
-6. [Chat-Http]('Chat')
+6. [Chat-Http](Chat)
 
 # Strutkura plików
 Główne pliki znajdują sie w folderu [`src`](src), generowane obrazu są wrzucane w główny folder plików, obrazy do odczytu muszą zostać umieszczone także w głównych plikach folderu
