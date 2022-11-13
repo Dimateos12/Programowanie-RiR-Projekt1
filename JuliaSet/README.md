@@ -1,1 +1,1 @@
-# Programowanie-RiR-Projekt1
+# JuliaSet
