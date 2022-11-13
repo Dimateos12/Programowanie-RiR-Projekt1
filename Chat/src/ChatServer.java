@@ -4,12 +4,12 @@ import java.util.*;
 
 
 public class ChatServer {
-    private int port = 8989;
+    private int port ;
     private Set<String> userNames = new HashSet<>();
     private Set<UserThread> userThreads = new HashSet<>();
 
     public ChatServer(int port) {
-        this.port = 8989;
+        this.port = port;
     }
 
     public void execute() {
@@ -36,7 +36,7 @@ public class ChatServer {
 
 
     /**
-     * Delivers a message from one user to others (broadcasting)
+     * Dostarczanie wiadomości od użytkownika do użytkownika (broadcasting)
      */
     void broadcast(String message, UserThread excludeUser) {
         for (UserThread aUser : userThreads) {
@@ -47,14 +47,14 @@ public class ChatServer {
     }
 
     /**
-     * Stores username of the newly connected client.
+     * Gromadzenie danych użytkownika z nowo połączonego klienta
      */
     void addUserName(String userName) {
         userNames.add(userName);
     }
 
     /**
-     * When a client is disconneted, removes the associated username and UserThread
+     * Gdy klient jest rozłączony, usuwamy związek użytkownika i Użytkownika Wątku
      */
     void removeUser(String userName, UserThread aUser) {
         boolean removed = userNames.remove(userName);
@@ -69,20 +69,24 @@ public class ChatServer {
     }
 
     /**
-     * Returns true if there are other users connected (not count the currently connected user)
-     */
+    Zwracamy prawde jeśli jakiś użytkownik jest połączony
+    **/
     boolean hasUsers() {
         return !this.userNames.isEmpty();
     }
 
     public static void main(String[] args) {
+
+        //Sprawdzamy czy zostaly podane parametry z wiersza polecen
         if (args.length < 1) {
             System.out.println("Syntax: java ChatServer <port-number>");
             System.exit(0);
         }
 
+        //Konwertujemy nasz numer portu do integera
         int port = Integer.parseInt(args[0]);
 
+        //tworzymy server chatu
         ChatServer server = new ChatServer(port);
         server.execute();
     }

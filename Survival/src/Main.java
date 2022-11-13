@@ -1,5 +1,3 @@
-package com.company;
-
 import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
@@ -28,6 +26,7 @@ public class Main {
 
 
 class Przetrwaniec extends Thread {
+
     // stany przetrwanca
     static int SCHRONIENIE = 1;
     static int POSZUKIWANIA = 2;

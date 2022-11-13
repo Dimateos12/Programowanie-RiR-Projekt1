@@ -3,8 +3,8 @@ import java.net.*;
 import java.util.*;
 
 /**
- * This thread handles connection for each connected client, so the server
- * can handle multiple clients at the same time.
+ * Ten plik odpowiada za połączenie kazdego uzytkownika co pozwala na  łączenie
+ * i operacje na serwerze przez kilku użytkowników
  *
  * @author www.codejava.net
  */
@@ -56,7 +56,7 @@ public class UserThread extends Thread {
     }
 
     /**
-     * Sends a list of online users to the newly connected user.
+     * Wysyłanie listy do nowo stworzonych użytkowników
      */
     void printUsers() {
         if (server.hasUsers()) {
@@ -67,7 +67,7 @@ public class UserThread extends Thread {
     }
 
     /**
-     * Sends a message to the client.
+     * Wysyłanie wiadomości do użytkowników
      */
     void sendMessage(String message) {
         writer.println(message);

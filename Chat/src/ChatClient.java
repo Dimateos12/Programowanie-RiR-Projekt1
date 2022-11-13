@@ -2,10 +2,8 @@ import java.net.*;
 import java.io.*;
 
 /**
- * This is the chat client program.
- * Type 'bye' to terminte the program.
- *
- * @author www.codejava.net
+ * Jest to klient czatu
+ * Napisz 'bye' by rozłączyć sie
  */
 public class ChatClient {
     private String hostname;

@@ -28,6 +28,7 @@ public class Negative  extends Thread{
                 try{
                     for (int y = 0; y < height; y++) {
                         for (int x = widthStart; x < widthEnd-1; x++) {
+
                             int p = finalImg.getRGB(x, y);
                             int a = (p >> 24) & 0xff;
                             int r = (p >> 16) & 0xff;
