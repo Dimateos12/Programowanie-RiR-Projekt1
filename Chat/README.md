@@ -11,3 +11,7 @@ W folderze [`src`](src) znajdują się pliki programu
 3. [ReadThread](src/ReadThread.java) - wątkek który odpowiada za odczyt wiadomości 
 4. [WriteThread](src/WriteThread.java) - wątek odpowiada z pisanie wiadomości po stronie użytkowników 
 
+# Uruchomienie programu 
+
+Najpierw uruchamiamy ChatServer `java ChatServer 8989` <br/>
+Następnie uruchamiamy ChatClient `java ChatClient localhost 8989` - na wejsciu podajemy ip oraz port do którego chcemy sie połączyć
